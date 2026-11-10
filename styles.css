@@ -79,7 +79,7 @@ h2 { margin-top: .25rem; font-size: clamp(1.9rem, 4vw, 3.2rem); line-height: 1.1
   .wrap { width: calc(100% - 2rem); }
   .bar { flex-wrap: wrap; }
   .project-logo { width: min(100%, 14rem); }
-  .prototype-grid { grid-template-columns: 1fr; }
+  .prototype-grid { column-gap: .75rem; }
   .repo-grid { grid-template-columns: 1fr; }
   .paper-list li { grid-template-columns: 1fr; gap: .2rem; }
 }
