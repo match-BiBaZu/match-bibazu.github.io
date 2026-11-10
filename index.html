@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the BiBaZu research project on image-based aerodynamic part feeding, including its demonstration, code, datasets and publications.">
+  <title>BiBaZu | Image-based aerodynamic part feeding</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <div class="wrap bar">
+      <a class="wordmark" href="#main">BiBaZu</a>
+      <nav aria-label="Main navigation">
+        <a href="#repositories">Repositories</a>
+        <a href="#publications">Publications</a>
+        <a href="https://github.com/match-BiBaZu">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="title">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">match · Leibniz University Hannover</p>
+          <h1 id="title">Image-based aerodynamic part feeding</h1>
+          <p class="intro">BiBaZu investigates how camera-based pose recognition, simulation and controlled air pulses can orient small parts for automated assembly.</p>
+          <div class="actions">
+            <a class="button" href="#repositories">Explore code and data</a>
+            <a href="https://www.match.uni-hannover.de/en/research/current-projects/research-projects/projects/aerodynamic-part-feeding">University project page ↗</a>
+          </div>
+        </div>
+        <figure>
+          <video controls playsinline preload="metadata" poster="assets/bibazu-poster.jpg" width="1920" height="1080" aria-label="BiBaZu workpiece reorientation demo">
+            <source src="assets/bibazu-demo.mp4" type="video/mp4">
+            <a href="assets/bibazu-demo.mp4">Open the demonstration video (MP4)</a>
+          </video>
+          <figcaption><span class="tag">Demo · 5 s</span><span>A workpiece rolls from its side onto its wheels on the test stand.</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="wrap section" id="repositories" aria-labelledby="repository-title">
+      <div class="repo-intro">
+        <div>
+          <p class="eyebrow">Code and data</p>
+          <h2 id="repository-title">Repositories</h2>
+          <p class="section-intro">Explore the experimental hardware, vision tools, and simulation pipeline.</p>
+        </div>
+        <img class="project-logo" src="assets/bibazu-logo.png" width="1536" height="1024" alt="BiBaZu logo showing illustrated parts on a conveyor">
+      </div>
+      <div class="repo-grid">
+        <div class="group">
+          <h3>Test stands and control</h3>
+          <ul>
+            <li><a href="https://github.com/match-BiBaZu/BiBaZu_Big_Boi">Large test stand</a><p>Conveyor, pneumatic control, camera integration and experiment logging.</p></li>
+            <li><a href="https://github.com/match-BiBaZu/BiBaZu_mini_test_stand">Mini test stand</a><p>TwinCAT control for a smaller pneumatic test rig.</p></li>
+            <li><a href="https://github.com/match-BiBaZu/BiBaZu_AutoTune">AutoTune</a><p>Geometry analysis and controlled tests for air-pulse parameters.</p></li>
+            <li><a href="https://github.com/match-BiBaZu/nozzle_force_finder">Nozzle force finder</a></li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Vision and workpiece catalog</h3>
+          <ul>
+            <li><a href="https://github.com/match-BiBaZu/USBaZu_Baumer_Kamera_image_processing">Baumer camera tools</a><p>Live contours, angle measurements and high-speed capture.</p></li>
+            <li><a href="https://github.com/match-BiBaZu/BiBaZu_Automated_Image_Capture">Automated image capture</a><p>Training image acquisition, labeling and YOLO workflows.</p></li>
+            <li><a href="https://github.com/match-BiBaZu/component_catalog_selector">Component catalog</a><p>STEP and STL models for 39 workpieces with a selection tool.</p></li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Simulation and pose data</h3>
+          <ul>
+            <li><a href="https://github.com/match-BiBaZu/BiBaZu_PoseFindingDropSim">Drop simulator</a><p>MuJoCo trials for workpieces landing on the conveyor chute.</p></li>
+            <li><a href="https://github.com/match-BiBaZu/BiBaZu_Stable_ComponentPoses">Stable component poses</a><p>Simulation results, trial settings and pose catalogs.</p></li>
+            <li><a href="https://github.com/match-BiBaZu/BiBaZu_StableComponentenRoadmaps">Reorientation roadmaps</a><p>Generate roadmaps from observed poses and candidate transitions.</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="papers" id="publications" aria-labelledby="publication-title">
+      <div class="wrap section">
+        <p class="eyebrow">Research output</p>
+        <h2 id="publication-title">Papers</h2>
+        <ol class="paper-list">
+          <li>
+            <span class="paper-year">2026</span>
+            <div>
+              <h3>The usual Suspects: A Geometrically Grounded Component Catalog for Benchmarking the Flexibility of Industrial Part Feeding Systems</h3>
+              <p>Dasha Shieff, Torge Kolditz and Annika Raatz · <a href="https://cirpe2026.com/">CIRPe 2026</a> · Camera-ready manuscript</p>
+            </div>
+          </li>
+          <li>
+            <span class="paper-year">2026</span>
+            <div>
+              <h3>Just Add Air: Flexible Part Feeding Through Controlled Aerodynamics</h3>
+              <p>Dasha Shieff, Leonard Olfens, Michael Halmbacher, Tobias Recker, Torge Kolditz and Annika Raatz · <a href="https://wgp.de/de/aktivitaeten/wgp-jahreskongress/">WGP-Jahreskongress 2026</a> · Camera-ready manuscript</p>
+            </div>
+          </li>
+          <li><span class="paper-year">2025</span><div><h3><a href="https://doi.org/10.1016/j.procir.2025.08.092">Aerodynamic Feeding 4.1: Simulation Based Parameter Selection for a Flexible Part Feeding Prototype ↗</a></h3><p>Dasha Shieff, Tobias Recker and Annika Raatz · <i>Procedia CIRP</i></p></div></li>
+          <li><span class="paper-year">2025</span><div><h3><a href="https://doi.org/10.1109/CASE58245.2025.11163971">You Only Look Once, But the Parts Keep Moving: YOLO-Based Workpiece Pose Classification for Aerodynamic Part Feeding ↗</a></h3><p>Dasha Shieff, M. Akchi and Annika Raatz · IEEE CASE</p></div></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>Institute of Assembly Technology and Robotics (match) · Leibniz University Hannover</p>
+    <a href="https://github.com/match-BiBaZu">BiBaZu on GitHub ↗</a>
+  </footer>
+</body>
+</html>
