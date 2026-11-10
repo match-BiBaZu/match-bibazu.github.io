@@ -39,12 +39,17 @@ h1 { margin-top: .6rem; font-size: clamp(2.25rem, 5vw, 4.6rem); line-height: 1.0
 .button { display: inline-block; padding: .65rem .9rem; border-radius: .25rem; background: var(--green); color: #182324; text-decoration: none; }
 .button:hover { background: #e0efaa; }
 video { display: block; width: 100%; height: auto; background: #101c1d; border: 1px solid #536563; border-radius: .5rem; }
-figcaption { margin-top: .75rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: .35rem .65rem; color: #dce8e3; font-size: .85rem; }
+.hero figcaption { margin-top: .75rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: .35rem .65rem; color: #dce8e3; font-size: .85rem; }
 .tag { color: var(--green); font-weight: 700; white-space: nowrap; }
 
 .section { padding-block: clamp(2.5rem, 6vw, 5.5rem); }
 h2 { margin-top: .25rem; font-size: clamp(1.9rem, 4vw, 3.2rem); line-height: 1.1; letter-spacing: -.04em; }
 .section-intro { margin-top: .65rem; color: var(--muted); }
+.prototype { background: #ebf0e8; }
+.prototype-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 1.25rem; margin-top: 1.8rem; }
+.prototype-grid img { display: block; width: 100%; height: auto; border-radius: .35rem; }
+.prototype-grid figcaption { margin-top: .55rem; color: var(--muted); font-size: .92rem; }
+.prototype-grid figcaption strong { display: block; color: var(--ink); font-size: 1rem; }
 .repo-intro { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem 2rem; }
 .project-logo { display: block; width: min(100%, 17rem); height: auto; border: 1px solid var(--rule); border-radius: .35rem; }
 .repo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-top: 1.8rem; }
@@ -73,6 +78,7 @@ h2 { margin-top: .25rem; font-size: clamp(1.9rem, 4vw, 3.2rem); line-height: 1.1
   .wrap { width: calc(100% - 2rem); }
   .bar { flex-wrap: wrap; }
   .project-logo { width: min(100%, 14rem); }
+  .prototype-grid { grid-template-columns: 1fr; }
   .repo-grid { grid-template-columns: 1fr; }
   .paper-list li { grid-template-columns: 1fr; gap: .2rem; }
 }
