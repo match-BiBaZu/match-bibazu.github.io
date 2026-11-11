@@ -46,7 +46,7 @@ video { display: block; width: 100%; height: auto; background: #101c1d; border: 
 h2 { margin-top: .25rem; font-size: clamp(1.9rem, 4vw, 3.2rem); line-height: 1.1; letter-spacing: -.04em; }
 .section-intro { margin-top: .65rem; color: var(--muted); }
 .prototype { background: #ebf0e8; }
-.prototype-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 1.25rem; max-width: 50rem; margin: 1.8rem auto 0; }
+.prototype-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem 1.25rem; margin-top: 1.8rem; }
 .prototype-grid figure > a { display: block; border-radius: .35rem; cursor: zoom-in; }
 .prototype img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: contain; border-radius: .35rem; }
 .prototype figcaption { margin-top: .55rem; color: var(--muted); font-size: .92rem; }
@@ -96,6 +96,7 @@ h2 { margin-top: .25rem; font-size: clamp(1.9rem, 4vw, 3.2rem); line-height: 1.1
 @media (max-width: 57rem) {
   .hero-grid { grid-template-columns: 1fr; }
   h1 { max-width: 15ch; }
+  .prototype-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 50rem; margin-inline: auto; }
   .repo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
