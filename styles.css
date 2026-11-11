@@ -51,6 +51,29 @@ h2 { margin-top: .25rem; font-size: clamp(1.9rem, 4vw, 3.2rem); line-height: 1.1
 .prototype figcaption { margin-top: .55rem; color: var(--muted); font-size: .92rem; }
 .prototype figcaption strong { display: block; color: var(--ink); font-size: 1rem; }
 
+.prototype-grid figure > a { display: block; border-radius: .35rem; cursor: zoom-in; }
+
+.gallery-viewer {
+  inset: 0;
+  width: 100vw;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: var(--dark);
+  color: #f8fbf6;
+}
+.gallery-viewer[open] { display: flex; flex-direction: column; }
+html:has(.gallery-viewer[open]) { overflow: hidden; }
+.gallery-viewer-bar { display: flex; align-items: center; justify-content: space-between; gap: .5rem 1rem; padding: .65rem 1rem; }
+.gallery-viewer-bar h2 { margin: 0; font-size: 1.05rem; letter-spacing: normal; }
+.gallery-viewer-bar button { padding: .45rem .75rem; border: 0; border-radius: .25rem; color: var(--ink); background: var(--green); font: inherit; cursor: pointer; }
+.gallery-viewer-bar button:focus-visible { outline: 2px solid white; outline-offset: 3px; }
+.gallery-image-frame { flex: 1; min-height: 0; }
+.gallery-image-frame img { display: block; width: 100%; height: 100%; object-fit: contain; }
+
 .repo-intro { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem 2rem; }
 .project-logo { display: block; width: min(100%, 17rem); height: auto; border: 1px solid var(--rule); border-radius: .35rem; }
 .repo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-top: 1.8rem; }
