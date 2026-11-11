@@ -50,11 +50,13 @@
         <p class="section-intro">The BiBaZu test stand uses a camera to identify workpiece poses and timed air pulses to turn parts on the conveyor.</p>
         <div class="prototype-grid">
           <figure>
-            <img src="assets/prototype-overview.webp" width="1440" height="960" loading="lazy" alt="Inclined BiBaZu conveyor with a camera and lighting assembly beside a robot arm">
+            <a href="assets/prototype-overview.webp" aria-label="Enlarge prototype overview" aria-haspopup="dialog">
+              <img src="assets/prototype-overview.webp" width="1440" height="960" loading="lazy" alt="Inclined BiBaZu conveyor with a camera and lighting assembly beside a robot arm">
+            </a>
             <figcaption><strong>Prototype overview</strong> The test stand in the lab, with the inclined conveyor in front of the robot arm.</figcaption>
           </figure>
           <figure id="annotated-feeder">
-            <a href="assets/bibazu-feeder-annotated.pdf" aria-label="Open the annotated feeder prototype PDF">
+            <a href="assets/bibazu-feeder-annotated.webp" aria-label="Enlarge annotated feeder prototype" aria-haspopup="dialog">
               <img src="assets/bibazu-feeder-annotated.webp" width="1648" height="1100" loading="lazy" alt="Close-up of the feeder with labels for the high-speed camera, light-barrier sensors, wall and belt nozzle arrays, PTFE wall plate, conveyor belt, and example workpieces">
             </a>
             <figcaption>
@@ -63,11 +65,15 @@
             </figcaption>
           </figure>
           <figure>
-            <img src="assets/prototype-nozzle-array.webp" width="1440" height="960" loading="lazy" alt="Close view of the nozzle array, valves and blue compressed air lines">
+            <a href="assets/prototype-nozzle-array.webp" aria-label="Enlarge pneumatic nozzle array" aria-haspopup="dialog">
+              <img src="assets/prototype-nozzle-array.webp" width="1440" height="960" loading="lazy" alt="Close view of the nozzle array, valves and blue compressed air lines">
+            </a>
             <figcaption><strong>Pneumatic nozzle array</strong> The valves and air lines deliver the pulses that reorient parts.</figcaption>
           </figure>
           <figure>
-            <img src="assets/prototype-pla-workpieces.webp" width="1440" height="960" loading="lazy" alt="A group of grey printed parts with circular, triangular and rectangular profiles">
+            <a href="assets/prototype-pla-workpieces.webp" aria-label="Enlarge 3D-printed PLA workpieces" aria-haspopup="dialog">
+              <img src="assets/prototype-pla-workpieces.webp" width="1440" height="960" loading="lazy" alt="A group of grey printed parts with circular, triangular and rectangular profiles">
+            </a>
             <figcaption><strong>3D-printed PLA workpieces</strong> Sample parts with different shapes and features for feeding experiments.</figcaption>
           </figure>
         </div>
@@ -124,6 +130,7 @@
               <h3>The usual Suspects: A Geometrically Grounded Component Catalog for Benchmarking the Flexibility of Industrial Part Feeding Systems</h3>
               <p>Dasha Shieff, Torge Kolditz and Annika Raatz · <a href="https://cirpe2026.com/">CIRPe 2026</a> · Camera-ready manuscript</p>
               <p>Code and CAD · <a href="https://github.com/match-BiBaZu/component_catalog_selector">Component catalog and selector</a></p>
+              <p>Dataset · <a href="https://zenodo.org/records/24070684">Physical Drop Tests and Video Recordings (Zenodo)</a></p>
             </div>
           </li>
           <li id="paper-just-add-air">
@@ -159,5 +166,16 @@
     <p>Institute of Assembly Technology and Robotics (match) · Leibniz University Hannover</p>
     <a href="https://github.com/match-BiBaZu">BiBaZu on GitHub ↗</a>
   </footer>
+  <dialog class="gallery-viewer" aria-labelledby="gallery-image-title">
+    <div class="gallery-viewer-toolbar">
+      <h2 id="gallery-image-title"></h2>
+      <div class="gallery-viewer-controls">
+        <button type="button" id="gallery-zoom" disabled>Zoom in</button>
+        <button type="button" id="gallery-close" autofocus>Close</button>
+      </div>
+    </div>
+    <div class="gallery-image-frame" role="region" aria-label="Gallery image" tabindex="0"></div>
+  </dialog>
+  <script src="gallery.js" defer></script>
 </body>
 </html>
