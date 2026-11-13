@@ -51,6 +51,14 @@ h2 { margin-top: .25rem; font-size: clamp(1.9rem, 4vw, 3.2rem); line-height: 1.1
 .prototype figcaption { margin-top: .55rem; color: var(--muted); font-size: .92rem; }
 .prototype figcaption strong { display: block; color: var(--ink); font-size: 1rem; }
 .labelled-workpieces { grid-column: 1 / -1; width: min(100%, 32rem); justify-self: center; }
+.industrial-workpieces {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: inherit;
+  width: min(100%, 39rem);
+  justify-self: center;
+}
 
 .prototype-grid figure > a { display: block; border-radius: .35rem; cursor: zoom-in; }
 
@@ -105,6 +113,7 @@ html:has(.gallery-viewer[open]) { overflow: hidden; }
   .bar { flex-wrap: wrap; }
   .project-logo { width: min(100%, 14rem); }
   .prototype-grid { column-gap: .75rem; }
+  .industrial-workpieces { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .repo-grid { grid-template-columns: 1fr; }
   .paper-list li { grid-template-columns: 1fr; gap: .2rem; }
 }
