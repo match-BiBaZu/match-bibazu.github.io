@@ -60,6 +60,7 @@ h2 { margin-top: .25rem; font-size: clamp(1.9rem, 4vw, 3.2rem); line-height: 1.1
 .spec-table th, .spec-table td { padding: .75rem; border: 1px solid #a6b5a8; text-align: left; vertical-align: top; }
 .spec-table th { background: #e0e8db; font-weight: 650; }
 .spec-table tbody th { width: 30%; }
+.hardware-specs th:nth-child(2), .hardware-specs td:nth-child(2) { width: 5rem; text-align: center; }
 .spec-table tbody tr:nth-child(even) td { background: #f1f5ee; }
 .spec-note { margin-top: .75rem; color: var(--muted); font-size: .85rem; }
 
@@ -110,6 +111,7 @@ html:has(.gallery-viewer[open]) { overflow: hidden; }
 }
 
 @media (max-width: 38rem) {
+  .spec-table th, .spec-table td { padding: .55rem .45rem; }
   .wrap { width: calc(100% - 2rem); }
   .bar { flex-wrap: wrap; }
   .project-logo { width: min(100%, 14rem); }

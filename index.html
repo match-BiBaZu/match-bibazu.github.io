@@ -104,30 +104,36 @@
         <p class="spec-note">Photos by Zoe-Marie Holm.</p>
         <section class="prototype-specs" aria-labelledby="specs-title">
           <h3 id="specs-title">Prototype specifications</h3>
-          <table class="spec-table" aria-label="Prototype hardware">
+          <table class="spec-table hardware-specs" aria-label="Prototype specifications">
+            <thead>
+              <tr><th scope="col">Component</th><th scope="col">Quantity</th><th scope="col">Specification</th></tr>
+            </thead>
             <tbody>
-              <tr><th scope="row">Conveyor drive</th><td>Two Beckhoff AM8112 servo motors with 32:1 gearboxes and 50 mm rollers</td></tr>
-              <tr><th scope="row">Air nozzles</th><td>Four individually controlled arrays of six nozzles, 24 nozzles in total</td></tr>
-              <tr><th scope="row">Pressure regulation</th><td>Two Festo VTEM units</td></tr>
-              <tr><th scope="row">Workpiece sensing</th><td>Eight SICK WTE11-2P2432 light-barrier sensors, two per nozzle array</td></tr>
-              <tr><th scope="row">Cameras</th><td>Baumer GigE camera for pose detection and Baumer VCXU-02C USB camera for high-speed recording</td></tr>
-              <tr><th scope="row">Image recognition model</th><td>YOLO26n</td></tr>
-              <tr><th scope="row">Lighting</th><td>Two Neewer RGB660 Pro II panels</td></tr>
-              <tr><th scope="row">Control</th><td>TwinCAT PLC with a 1 ms task cycle and EtherCAT I/O</td></tr>
-              <tr><th scope="row">Maximum tested feed rate</th><td>60 parts/min</td></tr>
+              <tr><th scope="row">Conveyor drive</th><td>2</td><td>Beckhoff AM8112 servo motors with 32:1 gearboxes and 50 mm rollers</td></tr>
+              <tr><th scope="row">Air nozzles</th><td>24</td><td>Lechler Series 600.484.56 nozzles, in four arrays of six individually controlled nozzles</td></tr>
+              <tr><th scope="row">Pressure regulation</th><td>2</td><td><a href="https://www.festo.com/us/en/p/motion-terminal-id_VTEM">Festo Motion Terminal VTEM</a></td></tr>
+              <tr><th scope="row">Workpiece sensing</th><td>8</td><td>Panasonic EX-13EB light-barrier sensors, two per nozzle array</td></tr>
+              <tr><th scope="row">Pose camera</th><td>1</td><td>Baumer VLXT-28M.I</td></tr>
+              <tr><th scope="row">Pose camera lens</th><td>1</td><td>Ricoh 25 mm, 5 MP lens</td></tr>
+              <tr><th scope="row">High-speed camera</th><td>1</td><td>Baumer VCXU-02C USB camera</td></tr>
+              <tr><th scope="row">Image recognition model</th><td>—</td><td>YOLO26n</td></tr>
+              <tr><th scope="row">Lighting</th><td>2</td><td>Neewer RGB660 Pro II panels</td></tr>
+              <tr><th scope="row">Control</th><td>1</td><td>Beckhoff C6043 IPC with Intel Core i9 CPU and NVIDIA 2000 GPU, running TwinCAT with a 1 ms PLC task cycle and EtherCAT I/O</td></tr>
+              <tr><th scope="row">Maximum tested feed rate</th><td>—</td><td>60 parts/min</td></tr>
             </tbody>
           </table>
           <table class="spec-table">
-            <caption>Tested conveyor speeds and calculated feed rates</caption>
+            <caption>Conveyor settings and calculated feed rates</caption>
             <thead>
-              <tr><th scope="col">Tested belt speed</th><th scope="col">Workpiece pitch</th><th scope="col">Calculated feed rate</th></tr>
+              <tr><th scope="col">Belt speed</th><th scope="col">Workpiece pitch</th><th scope="col">Calculated rate</th><th scope="col">Status</th></tr>
             </thead>
             <tbody>
-              <tr><td>100 mm/s</td><td>100 mm (10 cm)</td><td>60 workpieces/min</td></tr>
-              <tr><td>200 mm/s</td><td>100 mm (10 cm)</td><td>120 workpieces/min</td></tr>
+              <tr><td>100 mm/s</td><td>200 mm (20 cm)</td><td>30 parts/min</td><td>Tested</td></tr>
+              <tr><td>200 mm/s</td><td>200 mm (20 cm)</td><td>60 parts/min</td><td>Tested</td></tr>
+              <tr><td>200 mm/s</td><td>100 mm (10 cm)</td><td>120 parts/min</td><td>Coming soon</td></tr>
             </tbody>
           </table>
-          <p class="spec-note">The conveyor belt has been tested at 100 mm/s and 200 mm/s. Feed rates assume a 100 mm pitch between successive workpieces and are calculated as belt speed divided by pitch, multiplied by 60.</p>
+          <p class="spec-note">The tested workpiece pitch is 200 mm (20 cm). The 200 mm/s setting with 100 mm (10 cm) pitch is coming soon. Rates are calculated as belt speed divided by workpiece pitch, multiplied by 60.</p>
           <p class="spec-note">Hardware reference · <a href="https://github.com/match-BiBaZu/BiBaZu_Big_Boi#hardware-and-connections">BiBaZu Big Boi</a></p>
         </section>
       </div>
