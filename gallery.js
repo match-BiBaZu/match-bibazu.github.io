@@ -1,7 +1,7 @@
 const gallery = document.querySelector('.prototype-grid');
 const viewer = document.querySelector('.gallery-viewer');
 const title = viewer.querySelector('#gallery-image-title');
-const frame = viewer.querySelector('.gallery-image-frame');
+const photo = viewer.querySelector('.gallery-photo');
 
 gallery.addEventListener('click', (event) => {
   const link = event.target.closest('figure > a');
@@ -12,9 +12,14 @@ gallery.addEventListener('click', (event) => {
 
   event.preventDefault();
   title.textContent = link.closest('figure').querySelector('figcaption strong').textContent;
-  const image = new Image();
-  image.alt = link.querySelector('img').alt;
+  const thumbnail = link.querySelector('img');
+  const width = Number(thumbnail.getAttribute('width'));
+  const height = Number(thumbnail.getAttribute('height'));
+  const image = new Image(width, height);
+  image.alt = thumbnail.alt;
   image.src = link.href;
-  frame.replaceChildren(image);
+  photo.classList.toggle('watermark-left', link.classList.contains('watermark-left'));
+  photo.style.setProperty('--image-ratio', width / height);
+  photo.replaceChildren(image);
   viewer.showModal();
 });
