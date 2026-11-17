@@ -53,6 +53,15 @@ h2 { margin-top: .25rem; font-size: clamp(1.9rem, 4vw, 3.2rem); line-height: 1.1
 
 .prototype-grid figure > a { display: block; border-radius: .35rem; cursor: zoom-in; }
 
+.prototype-specs { max-width: 52rem; margin: 2.5rem auto 0; }
+.prototype-specs h3 { font-size: 1.3rem; }
+.spec-table { width: 100%; margin-top: 1rem; border-collapse: collapse; font-size: .92rem; }
+.spec-table caption { margin-bottom: .65rem; text-align: left; font-weight: 700; }
+.spec-table th, .spec-table td { padding: .65rem .75rem; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+.spec-table th { background: #e0e8db; font-weight: 650; }
+.spec-table tbody th { width: 30%; }
+.spec-note { margin-top: .75rem; color: var(--muted); font-size: .85rem; }
+
 .gallery-viewer {
   inset: 0;
   width: 100vw;

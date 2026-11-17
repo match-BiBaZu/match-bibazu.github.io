@@ -101,6 +101,32 @@
             <figcaption><strong>Industrial M5 connectors</strong> Part of the industrial component dataset used to validate prototype performance.</figcaption>
           </figure>
         </div>
+        <section class="prototype-specs" aria-labelledby="specs-title">
+          <h3 id="specs-title">Prototype specifications</h3>
+          <table class="spec-table" aria-label="Prototype hardware">
+            <tbody>
+              <tr><th scope="row">Conveyor drive</th><td>Two Beckhoff AM8112 servo motors with 32:1 gearboxes and 50 mm rollers</td></tr>
+              <tr><th scope="row">Air nozzles</th><td>Four individually controlled arrays of six nozzles, 24 nozzles in total</td></tr>
+              <tr><th scope="row">Pressure regulation</th><td>Two Festo VTEM units</td></tr>
+              <tr><th scope="row">Workpiece sensing</th><td>Eight SICK WTE11-2P2432 light-barrier sensors, two per nozzle array</td></tr>
+              <tr><th scope="row">Cameras</th><td>Baumer GigE camera for pose detection and Baumer VCXU-02C USB camera for high-speed recording</td></tr>
+              <tr><th scope="row">Lighting</th><td>Two Neewer RGB660 Pro II panels</td></tr>
+              <tr><th scope="row">Control</th><td>TwinCAT PLC with a 1 ms task cycle and EtherCAT I/O</td></tr>
+            </tbody>
+          </table>
+          <table class="spec-table">
+            <caption>Tested conveyor speeds and calculated feed rates</caption>
+            <thead>
+              <tr><th scope="col">Tested belt speed</th><th scope="col">Workpiece pitch</th><th scope="col">Calculated feed rate</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>100 mm/s</td><td>100 mm (10 cm)</td><td>60 workpieces/min</td></tr>
+              <tr><td>200 mm/s</td><td>100 mm (10 cm)</td><td>120 workpieces/min</td></tr>
+            </tbody>
+          </table>
+          <p class="spec-note">The conveyor belt has been tested at 100 mm/s and 200 mm/s. Feed rates assume a 100 mm pitch between successive workpieces and are calculated as belt speed divided by pitch, multiplied by 60.</p>
+          <p class="spec-note">Hardware reference · <a href="https://github.com/match-BiBaZu/BiBaZu_Big_Boi#hardware-and-connections">BiBaZu Big Boi</a></p>
+        </section>
       </div>
     </section>
 
