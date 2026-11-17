@@ -101,8 +101,7 @@ html:has(.gallery-viewer[open]) { overflow: hidden; }
 .gallery-photo img { display: block; width: 100%; height: auto; }
 
 .repo-intro { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem 2rem; }
-.project-logo { width: min(100%, 17rem); border: 1px solid var(--rule); border-radius: .35rem; overflow: hidden; }
-.project-logo img { display: block; width: 100%; height: auto; }
+.project-logo { display: block; width: min(100%, 17rem); height: auto; border: 1px solid var(--rule); border-radius: .35rem; }
 .repo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin-top: 1.8rem; }
 .group { border: 1px solid var(--rule); border-top: 3px solid #789550; border-radius: .25rem; padding: 1.15rem 1.2rem; background: #fff; }
 .group h3 { font-size: 1.08rem; }
